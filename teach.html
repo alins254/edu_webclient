@@ -1,0 +1,70 @@
+<?php
+$id = $_POST['id'];
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script type="text/javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <!-- //online-fonts -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/teach.js"></script>
+</head>
+<body>
+<div class="main-content" id="home">
+    <header>
+        <div class="container-fluid">
+            <!-- nav -->
+            <nav class="py-md-4 py-3 d-lg-flex nav_w3pvt">
+                <div id="logo">
+                    <h1 id="welcome" style = "color:white">Welcome</h1>
+                </div>
+                <ul class="menu mt-lg-3 ml-auto">
+                    <li><a href="login.html">Sign Out</a></li>
+                </ul>
+            </nav>
+            <!-- //nav -->
+        </div>
+    </header>
+    <!-- banner -->
+    <div class="banner-content-w3pvt">
+        <div class="banner-w3layouts-info text-center">
+            <h3>A teacher is one who makes himself progressively unnecessary</h3>
+            <form class="banner-form">
+                <div class="banner-w3layouts-info text-center">
+                    <p>Create a new course</p>
+                    <input type="text" class="form-control" id="registerId" placeholder="Register Id" name="rid">
+                    <input type="text" class="form-control" id="registerPsw" placeholder="Register Password" name="rpsw">
+                    <input type="text" class="form-control" id="courseName" placeholder="Course Name" name="cname">
+                    <input type="date" class="form-control" id="startDate" placeholder="Start Date">
+                    <input type="date" class="form-control" id="endDate" placeholder="End Date">
+                    <p id="confMessage"></p>
+                    <button type="button" class="btn btn-default" style="width:55%" id="addCourse">Add Course</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- //banner -->
+</div>
+</body>
+</html>
